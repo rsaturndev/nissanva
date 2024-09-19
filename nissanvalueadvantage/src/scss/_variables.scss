@@ -4,6 +4,10 @@ $red: #c3002f !default;
 $primary: $red;
 $secondary: #000000;
 
+$nav-link-color: $secondary;
+$nav-link-hover-color: $secondary;
+$nav-link-font-size: 16px;
+
 $container-max-widths: (
   sm: 540px,
   md: 768px,
