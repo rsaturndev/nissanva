@@ -2,3 +2,12 @@
 
 $red: #c3002f !default;
 $primary: $red;
+$secondary: #000000;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 1080px,
+  xl: 1600px,
+  xxl: 1920px
+) !default;

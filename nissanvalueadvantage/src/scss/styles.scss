@@ -6,7 +6,7 @@
     border-radius: 22px;
     padding: 10px 20px;
 }
-.btn-outline-primary {
+.btn-primary {
     background-color: $primary;
     border: 1px solid $primary;
 
@@ -15,4 +15,19 @@
         border: 1px solid $black;
         color: $black;
     }
+}
+.btn-outline-secondary {
+    background-color: $white;
+    border: 1px solid $secondary;
+    height: fit-content;
+
+    &:hover {
+        background-color: $secondary;
+        border: 1px solid $secondary;
+        color: $white;
+    }
+} 
+
+.container {
+    max-width: 1500px;
 }
