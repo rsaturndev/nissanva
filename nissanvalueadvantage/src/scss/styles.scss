@@ -1,6 +1,18 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+@import "_variables.scss";
 
-// Import fonts
+.btn {
+    border-radius: 22px;
+    padding: 10px 20px;
+}
+.btn-outline-primary {
+    background-color: $primary;
+    border: 1px solid $primary;
 
-// Variables
+    &:hover {
+        background-color: $white;
+        border: 1px solid $black;
+        color: $black;
+    }
+}
