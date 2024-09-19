@@ -11,3 +11,17 @@ $container-max-widths: (
   xl: 1600px,
   xxl: 1920px
 ) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 540px,
+  md: 768px,
+  lg: 1080px,
+  xl: 1600px,
+  xxl: 1920px
+) !default;
+
+$font-family-base: 'NissanBrandRegular', Verdana, Arial, sans-serif;
+$font-family-sans-serif: 'NissanBrandRegular', Verdana, Arial, sans-serif;
+$btn-font-family: 'NissanBrandRegular', Verdana, Arial, sans-serif;
+$headings-font-family: 'NissanBrandRegular', Verdana, Arial, sans-serif;
