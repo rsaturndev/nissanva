@@ -2,10 +2,10 @@
 .nissan-va {
     max-width: 200px;
 }
-@media(max-width: 1213px){
-    // .nissan-va {
-    //     max-width: 100px;
-    // }
+@media(max-width: 767px){
+    .nissan-va {
+        max-width: 130px;
+    }
 }
 /* General Nav Styling */
 
@@ -26,13 +26,13 @@
     &:hover {
         color: $secondary;
     }
-
 }
 
 .top-bar {
     .nav-link:hover {
         color: $secondary;
     }
+    
 }
 
 .secondary-bar { 
@@ -47,7 +47,12 @@
             font-family: $font-bold;
         }
     }
+}
 
+@media(max-width: 1250px){
+   .secondary-bar .nav-link {
+        padding: 0 0 20px 0 !important;
+    }
 }
 
 .dropdown-toggle::after {
