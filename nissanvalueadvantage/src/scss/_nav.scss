@@ -1,3 +1,12 @@
+/* Logos */
+.nissan-va {
+    max-width: 200px;
+}
+@media(max-width: 1213px){
+    // .nissan-va {
+    //     max-width: 100px;
+    // }
+}
 /* General Nav Styling */
 
 .nav-item {
@@ -5,20 +14,19 @@
 }
 
 .nav-link {
-    border-bottom: 4px solid $white;
     color: $secondary;
     font-family: $font-family-base;
-    padding: 0 20px 20px 20px !important;
 
     svg {
         width: 15px;
         margin-left: 10px;
         margin-bottom: 5px;
     }
-
-    &:hover, &.show {
-        border-bottom: 4px solid $primary;
+    
+    &:hover {
+        color: $secondary;
     }
+
 }
 
 .top-bar {
@@ -28,10 +36,18 @@
 }
 
 .secondary-bar { 
-    .nav-link:hover {
+    .nav-link {
+        border-bottom: 4px solid $white;
         color: $secondary;
-        font-family: $font-bold;
+        padding: 0 20px 20px 20px !important;
+
+        &:hover, &.show {
+            color: $secondary;
+            border-bottom: 4px solid $primary;
+            font-family: $font-bold;
+        }
     }
+
 }
 
 .dropdown-toggle::after {
@@ -46,14 +62,17 @@
         font-family: $font-family-base;
         font-size: 16px;
         height: 48px;
+        width: 210px;
     }
     .btn {
-        width: 200px;
+       svg {
+        margin-left: 20px;
+       }
 
         &:hover {
-            background-color: $secondary;
-            border: 1px solid $secondary;
-            color: $white;
+            // background-color: $secondary;
+            // border: 1px solid $secondary;
+            // color: $white;
     
             .cls-1 {
                 fill: $red;
@@ -62,13 +81,14 @@
 
         .cls-1 {
             fill: $secondary;
-    
-            
         }
     }
+}
 
-    
-    
+.vert-divider {
+    border-right: 1px solid #aaaaaa;
+    height: 50px;
+    margin-top: -14px;
 }
 
 
