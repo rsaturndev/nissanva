@@ -1,0 +1,50 @@
+.btn {
+    border-radius: 22px;
+    font-family: 'NissanBrandRegular', Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+
+    svg {
+        width: 25px;
+        margin-left: 8px;
+    }
+}
+.btn-primary {
+    background-color: $primary;
+    border: 1px solid $primary;
+
+    .cls-1 {
+        fill: $white;
+    }
+
+    &:hover {
+        background-color: $white;
+        border: 1px solid $black;
+        color: $black;
+
+
+        .cls-1 {
+            fill: $secondary;
+        }
+    }
+}
+.btn-outline-secondary {
+    background-color: $white;
+    border: 1px solid $secondary;
+    height: fit-content;
+
+    .cls-1 {
+        fill: $secondary;
+    }
+
+    &:hover {
+        background-color: $secondary;
+        border: 1px solid $secondary;
+        color: $white;
+
+        .cls-1 {
+            fill: $red;
+        }
+    }
+
+} 

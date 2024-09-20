@@ -1,14 +1,14 @@
 /* General Nav Styling */
 
 .nav-item {
-    padding: 0 25px;
+    padding: 0 10px;
 }
 
 .nav-link {
     border-bottom: 4px solid $white;
     color: $secondary;
     font-family: $font-family-base;
-    padding-bottom: 20px;
+    padding: 0 20px 20px 20px !important;
 
     svg {
         width: 15px;
@@ -16,7 +16,7 @@
         margin-bottom: 5px;
     }
 
-    &:hover {
+    &:hover, &.show {
         border-bottom: 4px solid $primary;
     }
 }
@@ -77,9 +77,21 @@
 
 @media all and (min-width: 992px) {
 
-  .navbar .has-megamenu{position:static!important;}
-  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
-
+  .navbar .has-megamenu {position:static!important;}
+  .navbar .megamenu {
+      border: none;
+      border-radius: 0px;
+      left:0; 
+      margin-left: 25px;
+      margin-top: 0;
+      margin-top:0;
+      padding: 40px 75px;
+      right:0; 
+      width: 90%;
+}
+    .secondary-col {
+        padding-top: 64px;
+    }
 }	
 @media(max-width: 991px){
   .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
@@ -87,17 +99,27 @@
       max-height: 90vh;
       margin-top:10px;
   }
+  .secondary-col {
+        margin-top: 0px;
+    }
 }
+
 
 /* Dropdown */
 .col-megamenu {
     h2 {
+        border-bottom: 1px solid $black;
         font-family: $font-family-base;
-        font-size: 16px;
+        font-size: 18px;
+        margin-bottom: 30px;
+        max-width: 150px;
+        padding-bottom: 10px;
     }
 
     li {
         font-family: $font-light;
+        font-size: 16px;
+        padding-bottom: 20px;
 
         a {
             color: $secondary;
@@ -108,4 +130,18 @@
             }
         }
     }
+}
+
+/* Search box */
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #aaaaaa;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #aaaaaa;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #aaaaaa;
 }
