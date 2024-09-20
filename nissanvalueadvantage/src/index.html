@@ -9,20 +9,6 @@
     <!-- <script defer="defer" src="../dist/main.js"></script> -->
     <link href="../dist/main.css" rel="stylesheet">
     <link href="../src/fonts/fonts.css" rel="stylesheet">
-
-    <script>
-      /* Fix to mobile toggle issue  */
-document.querySelector('.navbar-toggler').addEventListener('click', function() {
-    var menu = document.getElementById('navbarSupportedContent');
-    if (menu.classList.contains('show')) {
-        menu.classList.remove('show');
-    } else {
-        menu.classList.add('show');
-    }
-});
-    </script>
-    
-  </head>
   
   <!-- Navigation -->
   <div class="container">
@@ -49,7 +35,7 @@ document.querySelector('.navbar-toggler').addEventListener('click', function() {
     </nav>
     <nav class="secondary-bar navbar navbar-expand-xl pb-0 pt-3">
       <div class="container-fluid justify-content-end">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
