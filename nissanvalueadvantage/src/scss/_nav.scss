@@ -1,3 +1,76 @@
+/* General Nav Styling */
+
+.nav-item {
+    padding: 0 25px;
+}
+
+.nav-link {
+    border-bottom: 4px solid $white;
+    color: $secondary;
+    font-family: $font-family-base;
+    padding-bottom: 20px;
+
+    svg {
+        width: 15px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    &:hover {
+        border-bottom: 4px solid $primary;
+    }
+}
+
+.top-bar {
+    .nav-link:hover {
+        color: $secondary;
+    }
+}
+
+.secondary-bar { 
+    .nav-link:hover {
+        color: $secondary;
+        font-family: $font-bold;
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+.search {
+    .form-control {
+        border: 1px solid $black;
+        border-radius: 0;
+        font-family: $font-family-base;
+        font-size: 16px;
+        height: 48px;
+    }
+    .btn {
+        width: 200px;
+
+        &:hover {
+            background-color: $secondary;
+            border: 1px solid $secondary;
+            color: $white;
+    
+            .cls-1 {
+                fill: $red;
+            }
+        }
+
+        .cls-1 {
+            fill: $secondary;
+    
+            
+        }
+    }
+
+    
+    
+}
+
 
 /* Mega Menu */
 .navbar .megamenu{ padding: 1rem; }
@@ -14,4 +87,25 @@
       max-height: 90vh;
       margin-top:10px;
   }
+}
+
+/* Dropdown */
+.col-megamenu {
+    h2 {
+        font-family: $font-family-base;
+        font-size: 16px;
+    }
+
+    li {
+        font-family: $font-light;
+
+        a {
+            color: $secondary;
+            text-decoration: none;
+
+            &:hover {
+                font-family: $font-bold;
+            }
+        }
+    }
 }
