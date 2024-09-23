@@ -49,16 +49,7 @@
 
     .dropdown-menu.standard {
         background: $light-gray;
-        padding: 15px 15px 0px 15px;
-    }
-
-    .dropdown-item {
-        font-family: $font-light;
-
-        &:focus, &:hover {
-            background-color: unset;
-            font-family: $font-bold;
-        }
+        padding: 15px 15px 5px 15px;
     }
     
 }
@@ -87,6 +78,14 @@
     display: none;
 }
 
+.dropdown-item {
+    font-family: $font-light;
+
+    &:focus, &:hover {
+        background-color: unset;
+        font-family: $font-bold;
+    }
+}
 
 .search {
     .form-control {
