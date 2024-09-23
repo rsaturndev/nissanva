@@ -131,6 +131,7 @@
 
 
 /* Dropdown */
+/* --Mega-- **/
 .col-megamenu {
     h2 {
         border-bottom: 1px solid $black;
@@ -155,6 +156,23 @@
             }
         }
     }
+}
+/* Reg Dropdown */
+.dropdown-menu.standard {
+    border-radius: 0;
+    border: none;
+    padding: 30px 30px 30px 40px;
+    margin-left: 11px;
+    max-height: 400px;
+    overflow-y: scroll;
+
+    li {
+        padding-bottom: 12px;
+        min-width: 180px;
+    }
+}
+.navbar-nav > ul.dropdown-menu:nth-of-type(1) {
+    margin-left: 34px;
 }
 
 /* Search box */
