@@ -223,7 +223,6 @@
     }
     .navbar .megamenu {
         margin-left: 0;
-        max-height: 400px;
         overflow-y: scroll;
         padding: 30px 30px 30px 15px !important;
     }
@@ -244,6 +243,7 @@
     }
     .dropdown-menu.standard {
         margin-left: 0;
+        max-height: unset;
         padding-left: 0;
     }
 
