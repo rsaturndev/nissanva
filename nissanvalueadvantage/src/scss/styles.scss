@@ -12,3 +12,28 @@
 h1, h2, h3 {
     font-family: $font-light;
 }
+
+.h22 {
+    font-size: 22px;
+}
+
+.h35 {
+    font-size: 35px;
+}
+.h45{
+    font-size: 45px;
+}
+
+p {
+    font-family: $font-family-base;
+}
+.pad150 { /* Mobile */
+    padding-left: 25px;
+    padding-right: 25px;
+}
+@media (min-width: 1200px){
+    .pad150 {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
