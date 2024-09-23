@@ -30,8 +30,35 @@
 }
 
 .top-bar {
+    li {
+        padding-left: 10px;
+    }
     .nav-link:hover {
         color: $secondary;
+    }
+    .nav-link {
+        border-bottom: 4px solid $white;
+        color: $secondary;
+
+        &:hover, &.show {
+            color: $secondary;
+            border-bottom: 4px solid $primary;
+            font-family: $font-bold;
+        }
+    }
+
+    .dropdown-menu.standard {
+        background: $light-gray;
+        padding: 15px 15px 0px 15px;
+    }
+
+    .dropdown-item {
+        font-family: $font-light;
+
+        &:focus, &:hover {
+            background-color: unset;
+            font-family: $font-bold;
+        }
     }
     
 }
