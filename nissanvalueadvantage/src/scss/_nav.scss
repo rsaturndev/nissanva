@@ -15,7 +15,8 @@
 
 .nav-link {
     color: $secondary;
-    font-family: $font-family-base;
+    font-family: $font-light;
+    font-size: 15px;
 
     svg {
         width: 15px;
@@ -65,8 +66,8 @@
         border: 1px solid $black;
         border-radius: 0;
         font-family: $font-family-base;
-        font-size: 16px;
-        height: 48px;
+        font-size: 15px;
+        height: 43px;
         width: 210px;
     }
     .btn {

@@ -3,7 +3,12 @@
 @import "_variables.scss";
 @import "_nav.scss";
 @import "_btns.scss";
+@import "_homepage.scss";
 
 .container {
     max-width: 1500px;
+}
+
+h1, h2, h3 {
+    font-family: $font-light;
 }

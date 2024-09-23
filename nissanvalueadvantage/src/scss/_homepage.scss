@@ -1,0 +1,26 @@
+/* Carousel */
+.header-carousel {
+    .carousel-control-prev, .carousel-control-next {
+        width: 5%;
+    }
+
+    .btn-light {
+        margin-top: -100px;
+        position: absolute;
+        right: 50px;
+
+        .cls-1 {
+            fill: $primary;
+        }
+    }
+
+}
+
+/* Why Value Advantage */
+.why-va {
+    padding-top: 100px;
+
+    h1 {
+        font-size: 45px;
+    }
+}
