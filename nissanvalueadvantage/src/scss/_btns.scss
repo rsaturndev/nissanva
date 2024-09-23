@@ -68,3 +68,17 @@
         color: $white;
     }
 }
+
+.btn-outline-light {
+    svg {
+        .cls-1 {
+            fill: $white;
+        }
+    }
+
+    &:hover {
+        background: $primary;
+        border: 1px solid $primary;
+        color: $white;
+    }
+}

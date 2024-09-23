@@ -4,6 +4,7 @@
 @import "_nav.scss";
 @import "_btns.scss";
 @import "_homepage.scss";
+@import "_footer.scss";
 
 .container {
     max-width: 1500px;
@@ -42,4 +43,8 @@ p {
         padding-left: 150px;
         padding-right: 150px;
     }
+}
+
+a {
+    transition: all .2s ease-in-out;
 }

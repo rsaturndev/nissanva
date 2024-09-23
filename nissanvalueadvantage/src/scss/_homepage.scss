@@ -10,7 +10,7 @@
         right: 50px;
 
         .cls-1 {
-            fill: $primary;
+            fill: $secondary;
         }
     }
 
@@ -20,5 +20,24 @@
 .why-va {
     img {
         max-height: 85px;
+    }
+}
+
+/* Video */
+.video {
+    .btn {
+        margin-top: -100px;
+        position: absolute;
+        right: 50px;
+
+        .cls-1 {
+            fill: $secondary;
+        }
+
+        &:hover {
+            .cls-1 {
+                fill: $primary;
+            }
+        }
     }
 }
