@@ -15,6 +15,7 @@ h1, h2, h3 {
 
 .h22 {
     font-size: 22px;
+    line-height: 1.2;
 }
 
 .h35 {
@@ -25,7 +26,7 @@ h1, h2, h3 {
 }
 
 p {
-    font-family: $font-family-base;
+    font-family: $font-light;
 }
 .pad150 { /* Mobile */
     padding-left: 25px;
