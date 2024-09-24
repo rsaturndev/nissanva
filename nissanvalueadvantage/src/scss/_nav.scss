@@ -82,6 +82,11 @@
     }
 }
 
+// Trigger dropdown on hover
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .search {
     .form-control {
         border: 1px solid $black;
