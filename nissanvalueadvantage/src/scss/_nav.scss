@@ -82,11 +82,12 @@
     }
 }
 
-// Trigger dropdown on hover
-.dropdown:hover .dropdown-menu {
-    display: block;
+@media all and (min-width: 1199px) {
+    // Trigger dropdown on hover
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
-
 .search {
     .form-control {
         border: 1px solid $black;
@@ -130,7 +131,7 @@
     padding: 1rem;
  }
 
-@media all and (min-width: 992px) {
+@media (min-width: 992px) {
 
   .navbar .has-megamenu {position:static!important;}
   .navbar .megamenu {
@@ -149,10 +150,7 @@
     }
 }	
 
-
-
-/* Dropdown */
-/* --Mega-- **/
+/* --Mega dropdown -- **/
 .col-megamenu {
     h2 {
         border-bottom: 1px solid $black;
@@ -221,7 +219,7 @@
     margin-bottom: 15px;
 }
 
-@media(max-width: 991px){
+@media (max-width: 991px) {
     .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
         overflow-y: auto;
         max-height: 90vh;
@@ -237,7 +235,7 @@
     }
 }
 
-@media(max-width: 1250px){
+@media (max-width: 1250px) {
     .secondary-bar .nav-link {
          padding: 0 0 20px 0 !important;
      }
