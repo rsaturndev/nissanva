@@ -5,12 +5,23 @@
     }
 
     .btn-light {
+        border: 0;
         margin-top: -100px;
         position: absolute;
         right: 50px;
 
         .cls-1 {
             fill: $secondary;
+        }
+
+        &:hover {
+            background: $primary;
+            border: 0;
+            color: $white;
+
+            .cls-1 {
+                fill: $white;
+            }
         }
     }
 
@@ -34,12 +45,17 @@
 .video {
     .btn {
         margin-top: -100px;
+        border: 0;
 
         .cls-1 {
             fill: $secondary;
         }
 
         &:hover {
+            background: $secondary;
+            border: 0;
+            color: $white;
+
             .cls-1 {
                 fill: $primary;
             }
