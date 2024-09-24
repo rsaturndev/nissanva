@@ -9,9 +9,9 @@
 }
 /* General Nav Styling */
 
-.nav-item {
-    padding: 0 10px;
-}
+// .nav-item {
+//     padding: 0 10px;
+// }
 
 .nav-link {
     color: $secondary;
@@ -107,7 +107,7 @@
         font-family: $font-family-base;
         font-size: 15px;
         height: 39px;
-        width: 210px;
+        width: 200px;
     }
     .btn {
         min-width: 153px;
@@ -139,11 +139,11 @@
     }
 }
 
-.vert-divider {
-    border-right: 1px solid #aaaaaa;
-    height: 50px;
-    margin-top: -14px;
-}
+// .vert-divider {
+//     border-right: 1px solid #aaaaaa;
+//     height: 50px;
+//     margin-top: -14px;
+// }
 
 
 /* Mega Menu */
@@ -205,7 +205,7 @@
     margin-left: 0px;
     max-height: 400px;
 
-    .overflow {
+    &.overflow {
         overflow-y: scroll;
     }
 
@@ -264,7 +264,7 @@
 
 @media (max-width: 1250px) {
     .secondary-bar .nav-link {
-         padding: 0 0 20px 0 !important;
+         padding: 0 10px 20px 10px !important;
      }
  }
 
