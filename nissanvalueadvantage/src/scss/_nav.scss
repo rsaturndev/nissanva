@@ -61,7 +61,7 @@
         font-size: 15px;
         padding: 0 20px 20px 20px !important;
 
-        &:hover, &.show {
+        &:hover, &.show{
             color: $secondary;
             border-bottom: 4px solid $primary;
             font-family: $font-bold;
@@ -69,7 +69,7 @@
     }
 
     .btn-outline-secondary {
-        min-width: 192px;
+        min-width: 190px;
         text-align: left;
     }
 }
@@ -87,10 +87,17 @@
     }
 }
 
+
 @media all and (min-width: 1199px) {
     // Trigger dropdown on hover
     .dropdown:hover .dropdown-menu {
         display: block;
+    }
+
+    .dropdown:hover .nav-link {
+        color: $secondary;
+        border-bottom: 4px solid $primary;
+        font-family: $font-bold;
     }
 }
 .search {
@@ -103,6 +110,19 @@
         width: 210px;
     }
     .btn {
+        min-width: 153px;
+        text-align: left;
+        border: 0 !important;
+
+        &:active, &:hover{
+            border: 0;
+            font-family: $font-bold;
+
+            svg {
+                margin-left: 25px;
+            }
+        }
+
        svg {
         margin-left: 20px;
        }

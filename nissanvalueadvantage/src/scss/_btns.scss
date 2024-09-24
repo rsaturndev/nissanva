@@ -47,7 +47,10 @@
         background-color: $secondary;
         border: 1px solid $secondary;
         color: $white;
-        margin-left: 8px;
+
+        svg {
+            margin-left: 12px;
+        }
 
         .cls-1 {
             fill: $red;
