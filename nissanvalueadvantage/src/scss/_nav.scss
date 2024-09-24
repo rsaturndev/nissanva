@@ -69,6 +69,11 @@
         text-align: left;
     }
 }
+@media ( min-width: 1250px ){
+    .secondary-bar .navbar-nav {
+        padding-right: 25px;
+    }
+}
 
 //account for heavy font hover shift
 .make, .parts {
@@ -101,10 +106,19 @@
         display: block;
     }
 
-    .dropdown:hover .nav-link {
-        color: $secondary;
-        border-bottom: 4px solid $primary;
-        font-family: $font-bold;
+    .secondary-bar {
+        .dropdown:hover .nav-link {
+            color: $secondary;
+            border-bottom: 4px solid $primary;
+            font-family: $font-bold;
+        }
+    }
+
+    .top-bar {
+        .dropdown:hover .nav-link {
+            color: $secondary;
+            border-bottom: 4px solid $primary;
+        }
     }
 }
 .search {
@@ -161,9 +175,10 @@
 .navbar .megamenu{ 
     border: none;
     padding: 1rem;
+    z-index: 99;
  }
 
-@media (min-width: 992px) {
+@media (min-width: 1199px) {
 
   .navbar .has-megamenu {position:static!important;}
   .navbar .megamenu {
@@ -257,6 +272,24 @@
     margin-bottom: 15px;
 }
 
+@media (max-width: 1250px) {
+    .secondary-bar .nav-link {
+         padding: 0 10px 20px 10px !important;
+     }
+     .search .btn {
+        font-size: 14px;
+        min-width: 128px;
+
+        svg {
+            margin-left: 8px;
+        }
+
+        &:hover svg {
+            margin-left: 8px;
+        }
+     }
+ }
+ 
 @media (max-width: 991px) {
     .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
         overflow-y: auto;
@@ -273,12 +306,6 @@
     }
 }
 
-@media (max-width: 1250px) {
-    .secondary-bar .nav-link {
-         padding: 0 10px 20px 10px !important;
-     }
- }
- 
 @media (max-width: 1200px) {
     .dropdown-toggle.show {
         svg{
@@ -297,8 +324,14 @@
             justify-content: space-between;
         }
         .nav-item {
-            padding: 15px 20px;
+            padding: 15px 0 20px 15px;
         }
     }
-}
 
+    .search {
+        margin-left: 25px;
+    }
+    .btn-outline-secondary {
+        margin: 25px 0 50px 25px !important;
+    }
+}
