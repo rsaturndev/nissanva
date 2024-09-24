@@ -9,10 +9,6 @@
 }
 /* General Nav Styling */
 
-// .nav-item {
-//     padding: 0 10px;
-// }
-
 .nav-link {
     color: $secondary;
     font-family: $font-family-base;
@@ -74,6 +70,17 @@
     }
 }
 
+//account for heavy font hover shift
+.make, .parts {
+    min-width: 160px;
+}
+.year {
+    min-width: 152px;
+}
+.model {
+    min-width: 166px;
+}
+
 .dropdown-toggle::after {
     display: none;
 }
@@ -110,7 +117,7 @@
         width: 200px;
     }
     .btn {
-        min-width: 153px;
+        min-width: 150px;
         text-align: left;
         border: 0 !important;
 
@@ -119,12 +126,12 @@
             font-family: $font-bold;
 
             svg {
-                margin-left: 25px;
+                margin-left: 20px;
             }
         }
 
        svg {
-        margin-left: 20px;
+        margin-left: 15px;
        }
 
         &:hover {
@@ -137,6 +144,10 @@
             fill: $secondary;
         }
     }
+}
+
+@media (max-width: 1250px) {
+    .search {}
 }
 
 // .vert-divider {
@@ -267,7 +278,6 @@
          padding: 0 10px 20px 10px !important;
      }
  }
-
  
 @media (max-width: 1200px) {
     .dropdown-toggle.show {
