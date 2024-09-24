@@ -40,7 +40,6 @@
         &:hover, &.show {
             color: $secondary;
             border-bottom: 4px solid $primary;
-            font-family: $font-bold;
         }
     }
 
@@ -49,6 +48,10 @@
         padding: 15px 15px 5px 15px;
     }
     
+    .btn-primary {
+        min-width: 177px;
+        text-align: left;
+    }
 }
 
 .secondary-bar { 
@@ -64,8 +67,12 @@
             font-family: $font-bold;
         }
     }
-}
 
+    .btn-outline-secondary {
+        min-width: 192px;
+        text-align: left;
+    }
+}
 
 .dropdown-toggle::after {
     display: none;
@@ -156,7 +163,7 @@
     }
 
     li {
-        font-family: $font-family-base;
+        font-family: $font-light;
         font-size: 16px;
         padding-bottom: 20px;
 
@@ -204,6 +211,9 @@
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
     color: #aaaaaa;
+}
+.btn.search-btn {
+    padding: 7px 20px 10px 20px;
 }
 
 /* Mobile */
