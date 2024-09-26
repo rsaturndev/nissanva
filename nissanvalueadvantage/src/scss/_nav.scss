@@ -100,7 +100,7 @@
 }
 
 
-@media all and (min-width: 1199px) {
+@media (min-width: 1199px) {
     // Trigger dropdown on hover
     .dropdown:hover .dropdown-menu {
         display: block;
@@ -126,7 +126,7 @@
         border: 1px solid $black;
         border-radius: 0;
         font-family: $font-family-base;
-        font-size: 15px;
+        font-size: 14px;
         height: 39px;
         width: 210px;
     }
@@ -159,17 +159,6 @@
         }
     }
 }
-
-@media (max-width: 1250px) {
-    .search {}
-}
-
-// .vert-divider {
-//     border-right: 1px solid #aaaaaa;
-//     height: 50px;
-//     margin-top: -14px;
-// }
-
 
 /* Mega Menu */
 .navbar .megamenu{ 

@@ -32,6 +32,24 @@
         }
     }
 
+    @media (max-width: 768px){
+        .btn-light {
+            right: -2px;
+            bottom: -8px;
+            font-size: 11px;
+            padding: 5px 10px;
+
+            svg {
+                width: 16px;
+                margin-bottom: 2px;
+            }
+        }
+        .carousel-indicators {
+            margin-bottom: 0px;
+        }
+    }
+
+
 }
 
 /* Why Value Advantage */
@@ -58,6 +76,21 @@
 
             .cls-1 {
                 fill: $primary;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .video {
+        .btn {
+            font-size: 11px;
+            margin-top: -65px;
+            padding: 5px 10px;
+
+            svg {
+                width: 16px;
+                margin-bottom: 2px;
             }
         }
     }
