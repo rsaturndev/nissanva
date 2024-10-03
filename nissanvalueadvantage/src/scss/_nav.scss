@@ -261,6 +261,19 @@
     margin-bottom: 15px;
 }
 
+.mobile-parts-search {
+    font-family: $font-bold;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    svg {
+        width: 25px;
+        margin-bottom: 4px;
+    }
+}
+
 @media (max-width: 1250px) {
     .secondary-bar .nav-link {
          padding: 0 10px 20px 10px !important;
