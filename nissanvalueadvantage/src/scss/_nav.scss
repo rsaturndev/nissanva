@@ -167,7 +167,7 @@
     z-index: 99;
  }
 
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
 
   .navbar .has-megamenu {position:static!important;}
   .navbar .megamenu {
@@ -254,6 +254,8 @@
     padding: 7px 20px 10px 20px;
 }
 
+
+
 /* Mobile */
 
 .navbar-toggler {
@@ -278,7 +280,7 @@
     .secondary-bar .nav-link {
          padding: 0 10px 20px 10px !important;
      }
-     .search .btn {
+     .btn.search-btn {
         font-size: 14px;
         min-width: 128px;
 
@@ -291,6 +293,16 @@
         }
      }
  }
+
+ @media (max-width: 1200px) {
+    .btn.search-btn {
+        margin-top: 35px;
+        padding: 0px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: $font-bold;
+    }
+}
  
 @media (max-width: 991px) {
     .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
@@ -326,7 +338,7 @@
             justify-content: space-between;
         }
         .nav-item {
-            padding: 15px 0 20px 30px;
+            padding: 15px 0 0px 0px;
         }
     }
 
