@@ -261,14 +261,14 @@
 .navbar-toggler {
     border: none;
     margin-bottom: 15px;
-}
-
-.mobile-parts-search {
-    font-family: $font-bold;
 
     &:focus {
         box-shadow: none !important;
     }
+}
+
+.mobile-parts-search {
+    font-family: $font-bold;
 
     svg {
         width: 25px;
@@ -302,9 +302,19 @@
         font-size: 18px;
         font-family: $font-bold;
     }
+
+    // .navbar-toggler-top .navbar-toggler-icon,
+    .top-bar .col-12 {
+        margin-top: -50px;
+    }
 }
  
 @media (max-width: 991px) {
+    // .navbar-toggler-top .navbar-toggler-icon,
+    .top-bar .col-12 {
+        margin-top: -35px;
+    }
+
     .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
         overflow-y: auto;
         max-height: 90vh;
