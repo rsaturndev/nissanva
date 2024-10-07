@@ -266,8 +266,17 @@
     }
 }
 
+.navbar-toggler-bottom:has(+ .show) {
+    color: $primary;
+
+    .cls-1 {
+        fill: $primary !important;
+    }
+}
+
 .mobile-parts-search {
     font-family: $font-bold;
+    padding-left: 0;
 
     svg {
         width: 25px;
@@ -277,7 +286,7 @@
 
 @media (max-width: 1250px) {
     .secondary-bar .nav-link {
-         padding: 0 10px 20px 10px !important;
+         padding: 10px 10px 15px 0px !important;
      }
      .btn.search-btn {
         font-size: 14px;
@@ -294,15 +303,23 @@
  }
 
  @media (max-width: 1200px) {
+    .top-bar .navbar-nav {
+        border-top: 1px solid $secondary;
+        padding-top: 25px;
+
+        .collapse {
+            margin-top: 15px;
+        }
+    }
+    .top-bar .col-12 {
+        margin-top: -50px;
+    }
     .btn.search-btn {
         margin-top: 35px;
         padding: 0px;
         text-transform: uppercase;
         font-size: 18px;
         font-family: $font-bold;
-    }
-    .top-bar .col-12 {
-        margin-top: -50px;
     }
 }
  
@@ -312,7 +329,6 @@
     }
 
     .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
-        overflow-y: auto;
         max-height: 90vh;
         margin-top:10px;
   }
@@ -321,8 +337,8 @@
     }
     .navbar .megamenu {
         margin-left: 0;
-        overflow-y: scroll;
-        padding: 30px 30px 30px 15px !important;
+        overflow-y: unset;
+        padding: 30px 30px 0px 15px !important;
     }
 }
 
@@ -336,21 +352,30 @@
         margin-left: 0;
         max-height: unset;
         padding-left: 0;
+        padding-bottom: 0;
     }
 
     .secondary-bar {
         .nav-link {
             display: flex;
             justify-content: space-between;
+            border-bottom: 1px solid $secondary;
         }
         .nav-item {
             padding: 15px 0 0px 0px;
         }
+        .collapse {
+            border-top: 1px solid $secondary;
+        }
     }
 
-    .search {
-        margin-left: 25px;
+    .dropdown-menu.standard.overflow {
+        overflow-y: unset;
     }
+
+    // .search {
+    //     margin-left: 10px;
+    // }
     .btn-outline-secondary {
         margin: 25px 0 50px 25px !important;
     }
