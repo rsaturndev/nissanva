@@ -388,6 +388,12 @@
 .sticky-mobile-menu {
     background: $light-gray;
 
+    svg {
+        margin-bottom: 8px;
+        width: 35px;
+    }
+
+
     .col {
         align-content: flex-end;
         border: 1px solid #000;
@@ -407,5 +413,20 @@
         margin-bottom: 0;
         text-transform: uppercase;
         color: $secondary;
+    }
+
+    a:focus, a:active, a:hover {
+        background: $black;
+
+        .cls-1 {
+            fill: $white;
+        }
+        .cls-2 {
+            fill: $black;
+        }
+
+        p {
+            color: $white;
+        }
     }
 }
