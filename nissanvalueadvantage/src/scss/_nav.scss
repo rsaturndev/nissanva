@@ -373,9 +373,6 @@
         overflow-y: unset;
     }
 
-    // .search {
-    //     margin-left: 10px;
-    // }
     .btn-outline-secondary {
         margin: 25px 0 50px 25px !important;
     }
@@ -399,7 +396,7 @@
     }
 
     p {
-        font-family: $font-bold;
+        font-family: $font-family-base;
         font-size: 12px;
         line-height: 1.2;
         margin-bottom: 0;
