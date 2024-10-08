@@ -280,6 +280,10 @@
     line-height: 1.3;
     padding-left: 0;
 
+    &.dealer-access {
+        padding-right: 0;
+    }
+
     svg {
         width: 25px;
         margin-bottom: 4px;
